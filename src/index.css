@@ -56,7 +56,7 @@
    Warm values live in :root so the site is dark by default with no toggle.
    --------------------------------------------------------------------------- */
 :root {
-    --background: #17120e;             /* deep espresso */
+    --background: #0a0705;             /* warm near-black (base behind matrix rain) */
     --foreground: #f5ece0;             /* warm cream */
     --card: #1f1812;                   /* raised surface */
     --card-foreground: #f5ece0;
@@ -96,16 +96,29 @@
     }
   body {
     @apply bg-background text-foreground;
-    /* subtle warm radial glow so the dark feels cozy, never flat black */
-    background-image: radial-gradient(
-      80rem 50rem at 50% -10%,
-      color-mix(in oklab, var(--primary) 7%, transparent),
-      transparent 60%
-    );
-    background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
     }
   html {
     @apply font-sans;
     }
+}
+
+/* Vignette + dark scrim laid over the matrix-rain canvas. The flat wash keeps
+   page text readable; the radial gradient darkens the edges for focus. */
+.matrix-vignette {
+  background:
+    radial-gradient(
+      ellipse 85% 75% at 50% 32%,
+      transparent 0%,
+      rgba(0, 0, 0, 0.42) 55%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    linear-gradient(rgba(10, 7, 5, 0.4), rgba(10, 7, 5, 0.4));
+}
+
+/* Soft dark halo behind foreground text keeps it crisp over the amber rain
+   (also echoes the glow treatment of the source theme). */
+.text-shadow-readable,
+.text-shadow-readable :where(h1, h2, h3, p, a, span, li) {
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.7), 0 0 2px rgba(0, 0, 0, 0.6);
 }
