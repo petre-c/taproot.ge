@@ -150,9 +150,13 @@ type Treat = {
   GitHub account.
 - GitHub Actions workflow on push to `main`: install → `vite build` → deploy `dist/` to
   `gh-pages` (via `actions/deploy-pages` or `peaceiris/actions-gh-pages`).
-- Vite `base` configured for the GitHub Pages path (e.g. `/taproot.ge/` for a project
-  page, or `/` if a custom domain / user-page is used). A `CNAME` file is added if the
-  `taproot.ge` custom domain is pointed at Pages.
+- **Domain comes later.** Initially the site is served at the project-pages URL
+  (`petre-c.github.io/taproot.ge/`); the `taproot.ge` custom domain will be pointed at
+  Pages at a later date. To make the build work at the subpath now AND at the root domain
+  later with no rebuild changes, Vite uses a **relative base** (`base: './'`). This is
+  safe here because the site is a single `index.html` with anchor navigation (no
+  client-side router). A `public/CNAME` file with `taproot.ge` is added only when the
+  domain is actually pointed.
 - The workflow file is heavily commented to make intent clear (per project conventions).
 
 ## Testing
