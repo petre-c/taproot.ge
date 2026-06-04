@@ -23,6 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# local artifacts
+# local artifacts (browser-test screenshots)
 .playwright-mcp/
-*.png
+/taproot-*.png
