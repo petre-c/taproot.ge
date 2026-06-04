@@ -26,3 +26,6 @@ dist-ssr
 # local artifacts (browser-test screenshots)
 .playwright-mcp/
 /taproot-*.png
+
+# local Claude Code session state
+.claude/
