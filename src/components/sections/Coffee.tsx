@@ -6,8 +6,8 @@ export function Coffee() {
     <section id="coffee" className="mx-auto max-w-5xl px-4 py-16">
       <h2 className="text-3xl font-bold tracking-tight">Coffee &amp; cookies</h2>
       <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-        Showing up is the only thing we ask. The coffee&apos;s hot, the cookies are fresh, and
-        they&apos;re on the house — our way of keeping the conversation going.
+        The coffee&apos;s hot and the cookies are fresh. Grab some from the bar to keep the
+        conversation going — pay at the counter, sats welcome.
       </p>
       <div className="mt-8 grid gap-4 sm:grid-cols-3">
         {treats.map((t) => (

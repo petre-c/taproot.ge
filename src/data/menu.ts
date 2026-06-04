@@ -5,9 +5,9 @@ export type Treat = {
   image?: string;       // optional asset path
 };
 
-// Hospitality, not a store: no prices, no checkout.
+// Available to buy at the meetup (pay at the counter). No online checkout / no prices listed here.
 export const treats: Treat[] = [
-  { id: "espresso", name: "Espresso", blurb: "Small, strong, and on the house while we talk blocks." },
+  { id: "espresso", name: "Espresso", blurb: "Small, strong, and made to keep up with the conversation." },
   { id: "filter", name: "Filter coffee", blurb: "Slow-brewed for the long conversations." },
   { id: "cookies", name: "Fresh cookies", blurb: "Baked for the meetup. They go fast." },
 ];

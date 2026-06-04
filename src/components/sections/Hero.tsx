@@ -16,7 +16,7 @@ export function Hero() {
         Come talk about <span className="text-primary">Bitcoin</span>.
       </h1>
       <p className="mx-auto mt-5 max-w-xl text-balance text-lg text-muted-foreground">
-        {site.tagline} Pure Bitcoin — no altcoins, no noise. Free coffee and cookies, always.
+        {site.tagline} Pure Bitcoin — no altcoins, no noise. Grab a coffee, a cookie, and pull up a chair.
       </p>
       <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
         <Button asChild size="lg">

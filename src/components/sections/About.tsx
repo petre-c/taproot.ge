@@ -10,7 +10,7 @@ export function About() {
         </p>
         <p>
           No altcoins, no trading hype, no jargon gatekeeping. Just honest conversation about
-          sound money — over good coffee and fresh cookies that are always on us.
+          sound money — over good coffee and fresh cookies from the bar.
         </p>
       </div>
     </section>

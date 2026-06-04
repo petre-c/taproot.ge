@@ -51,7 +51,7 @@
 /* ---------------------------------------------------------------------------
    taproot.ge — dark + warm "espresso" theme (dark-only; no light mode in v1).
    The palette LEADS with espresso brown + caramel/cream. Bitcoin orange
-   (--primary) is reserved for the single CTA, the ₿ glyph, and focus rings —
+   (--primary) is reserved for the single CTA, the root logo glyph, and focus rings —
    used sparingly, never on large surfaces.
    Warm values live in :root so the site is dark by default with no toggle.
    --------------------------------------------------------------------------- */
