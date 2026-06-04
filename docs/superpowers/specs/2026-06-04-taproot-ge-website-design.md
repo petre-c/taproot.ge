@@ -46,11 +46,16 @@ A warm espresso palette rather than cold pure-black, with Bitcoin orange as the 
 | Background       | `#17120e`  | Page background (deep espresso)      |
 | Surface          | `#1f1812`  | Cards, raised surfaces               |
 | Border           | `#3a2f26`  | Subtle warm borders                  |
-| Primary accent   | `#F7931A`  | Bitcoin orange — CTAs, ₿, highlights |
-| Secondary        | `#d99a5b`  | Caramel/amber — secondary accents    |
+| Primary accent   | `#F7931A`  | Bitcoin orange — used **sparingly**  |
+| Secondary        | `#d99a5b`  | Caramel/amber — the dominant warm hue |
 | Text             | `#f5ece0`  | Warm cream body text                 |
 | Muted text       | `#b8a894`  | Secondary/meta text                  |
 
+- **Restrained orange.** The palette leads with warm espresso browns and caramel/amber
+  cream tones — *not* a heavily orange site. Bitcoin orange (`#F7931A`) is reserved for
+  small, intentional touches only: the ₿ glyph, the single primary CTA, and a few key
+  highlights/hover states. Large surfaces (backgrounds, headings, most text) stay
+  espresso/caramel/cream so the feel is warm and cozy, not loud.
 - Characterful display font for headings, clean sans for body, monospace for any ₿/sats
   figures.
 - Soft warm shadows, rounded cards, subtle warm glow/grain — never cold/flat black.
